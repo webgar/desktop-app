@@ -1,1 +1,1 @@
-# disktop-app
+# desktop-app
