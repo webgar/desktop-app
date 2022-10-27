@@ -1,13 +1,22 @@
+
 * {
   padding: 0;
   margin: 0;
 }
 
+body {
+  color: #fff;
+  background: #00303F;
+  font: 300 1em "Fira Sans", sans-serif;
+}
+ h1 {
+   font-weight: 400;
+ }
+
 .container {
   width: 1000px;
   min-height: 700px;
   padding-top: 50px;
-  background-color: aqua;
 }
 .heading {
   font-size: 20px;
@@ -28,5 +37,30 @@
 .wrapper__btn {
   width: 100px;
   height: 70px;
+  --color: #ffa260;
+  --hover: #e5ff60;
   border-radius: 5px;
+}
+
+.wrapper__btn:hover,
+.wrapper__btn:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+}
+
+
+button {
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+  color: var(--color);
+  transition: 0.25s;
+}
+button:hover,
+button:focus {
+  border-color: var(--hover);
+  color: #fff;
 }
