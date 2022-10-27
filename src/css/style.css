@@ -6,7 +6,7 @@
 
 body {
   color: #fff;
-  background: #00303F;
+  background: #468089;
   font: 300 1em "Fira Sans", sans-serif;
 }
  h1 {
@@ -16,8 +16,111 @@ body {
 .container {
   width: 1000px;
   min-height: 700px;
-  padding-top: 50px;
+  padding-top: 100px;
 }
+
+.links {
+  background-color: #123;
+  background-image: linear-gradient(to bottom, #0003, transparent);
+  border-bottom: 1px solid #0003;
+  box-shadow: 0 0 32px #0003;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.links>a {
+  color: #9ab;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  transition: all .5s;
+}
+
+.links>a:hover {
+  background: #ffffff06;
+  color: #adf;
+}
+
+.links>.line {
+  background: #68a;
+  height: 1px;
+  pointer-events: none;
+}
+
+/* The Magic */
+#header {
+  width: 900px;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.links {
+  display: grid;
+  grid-template-columns: repeat(var(--items), 1fr);
+  position: relative;
+}
+
+.links>.line {
+  opacity: 0;
+  transition: all .5s;
+  position: absolute;
+  bottom: 0;
+  left: var(--left, calc(100% / var(--items) * (var(--index) - 1)));
+  width: var(--width, calc(100% / var(--items)));
+  --index: 0;
+}
+
+.links>a:hover~.line {
+  opacity: 1;
+}
+
+.links>a:nth-of-type(1):hover~.line {
+  --index: 1;
+}
+
+.links>a:nth-of-type(2):hover~.line {
+  --index: 2;
+}
+
+.links>a:nth-of-type(3):hover~.line {
+  --index: 3;
+}
+
+.links>a:nth-of-type(4):hover~.line {
+  --index: 4;
+}
+
+.links>a:nth-of-type(5):hover~.line {
+  --index: 5;
+}
+
+.links>a:nth-of-type(6):hover~.line {
+  --index: 6;
+}
+
+.links>a:nth-of-type(7):hover~.line {
+  --index: 7;
+}
+
+.links>a:nth-of-type(8):hover~.line {
+  --index: 8;
+}
+
+.links>a:nth-of-type(9):hover~.line {
+  --index: 9;
+}
+
+.links>a:nth-of-type(10):hover~.line {
+  --index: 10;
+}
+
+.links>a:last-of-type:hover~.line {
+  --index: var(--items);
+}
+
 .heading {
   font-size: 20px;
   text-align: center;
@@ -37,15 +140,17 @@ body {
 .wrapper__btn {
   width: 100px;
   height: 70px;
-  --color: #ffa260;
+  font-size: 23px;
+  color: #140e19;
   --hover: #e5ff60;
+  text-shadow: 0 3px 1px #3a6ea5, 10px 14px 10px rgb(0 0 0 / 15%), 10px 12px 2px rgb(0 0 0 / 10%), 10px 17px 30px rgb(0 0 0 / 10%);
   border-radius: 5px;
 }
 
 .wrapper__btn:hover,
 .wrapper__btn:focus {
-  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
-  transform: translateY(-0.25em);
+  box-shadow: 0 8px 8px -6px var(--hover);
+  transform: translateY(-4px);
 }
 
 
@@ -54,9 +159,9 @@ button {
   border: 2px solid;
   font: inherit;
   line-height: 1;
-  margin: 0.5em;
-  padding: 1em 2em;
-  color: var(--color);
+  margin: 8px;
+  padding: 16px 32px;
+  border-color: #ffa260;
   transition: 0.25s;
 }
 button:hover,
