@@ -160,7 +160,7 @@ button {
   font: inherit;
   line-height: 1;
   margin: 8px;
-  padding: 16px 32px;
+  padding: 16px 10px;
   border-color: #ffa260;
   transition: 0.25s;
 }
