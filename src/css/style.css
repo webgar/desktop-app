@@ -126,9 +126,6 @@ body {
   text-align: center;
   margin-bottom: 50px;
 }
-.wrapper {
-
-}
 .wrapper__list {
   display: flex;
   justify-content: space-evenly;
@@ -160,7 +157,7 @@ button {
   font: inherit;
   line-height: 1;
   margin: 8px;
-  padding: 16px 32px;
+  padding: 16px 10px;
   border-color: #ffa260;
   transition: 0.25s;
 }
