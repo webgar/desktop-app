@@ -16,7 +16,6 @@ body {
 .container {
   width: 1000px;
   min-height: 700px;
-  padding-top: 100px;
 }
 
 .links {
@@ -24,7 +23,7 @@ body {
   background-image: linear-gradient(to bottom, #0003, transparent);
   border-bottom: 1px solid #0003;
   box-shadow: 0 0 32px #0003;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 300;
 }
 
@@ -55,6 +54,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 10000;
 }
 
 .links {
@@ -122,21 +122,25 @@ body {
 }
 
 .heading {
-  font-size: 20px;
+  font-size: 30px;
   text-align: center;
-  margin-bottom: 50px;
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+.wrapper {
 }
 .wrapper__list {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  margin-bottom: 0.5rem;
 }
 .wrapper__item {
   list-style-type: none;
   padding: 0;
 }
 .wrapper__btn {
-  width: 100px;
-  height: 70px;
+  width: 85px;
+  height: 65px;
   font-size: 23px;
   color: #140e19;
   --hover: #e5ff60;
@@ -152,6 +156,7 @@ body {
 
 
 button {
+  position: relative;
   background: none;
   border: 2px solid;
   font: inherit;
@@ -165,4 +170,62 @@ button:hover,
 button:focus {
   border-color: var(--hover);
   color: #fff;
+  z-index: 1;
 }
+
+ /* TOOLTIP */
+
+ .tooltip {
+   position: absolute;
+    right: 5px;
+    bottom: 0;
+   display: inline-block;
+   color: #f8fafc;
+   opacity: 1;
+ }
+
+ .tooltip .tooltiptext {
+   visibility: hidden;
+   width: 200px;
+   background-color: #adf;
+   color: #140e19;
+   text-align: center;
+   border-radius: 6px;
+   font-size: 14px;
+   /* Position the tooltip */
+   position: absolute;
+  left: -68px;
+    bottom: -70px;
+    z-index: 1000;
+ }
+.tooltiptext {
+}
+ .tooltip:hover .tooltiptext {
+   visibility: visible;
+ }
+ .table {
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: separate;
+  border-radius: 15px;
+ }
+ .table__cols {
+  padding: 4px;
+  vertical-align: top;
+  
+ }
+ .table__rows {
+  padding: 4px;
+  vertical-align: top;
+  border-right: 1px solid #ffa260;
+  border-bottom: 1px solid #ffa260;
+ } 
+ .wrapper_paragraph {
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+ }
+ .item-hidden {
+  visibility: hidden;
+ }

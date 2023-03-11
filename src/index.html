@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Temperature Converter</title>
+    <title>Alifbo</title>
     <link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
 
@@ -11,11 +11,11 @@
     <div class="container">
       <header id="header">
         <nav class="links" style="--items: 5;">
-          <a href="#">Lotin(O'zbek)</a>
-          <a href="#">Kiril(O'zbek)</a>
-          <a href="#">Kiril(Rus)</a>
-          <a href="#">Lotin</a>
-          <a href="#">Grek</a>
+          <a href="index.html">Lotin(O'zbek)</a>
+          <a href="uzb.html">Kirill(O'zbek)</a>
+          <a href="ru.html">Rus</a>
+          <a href="lotin.html">Lotin</a>
+          <a href="grek.html">Grek</a>
           <span class="line"></span>
         </nav>
         
@@ -23,45 +23,553 @@
       <h1 class="heading" >Lotin yozuviga asoslangan o'zbek alifbosi</h1>
       <div class="wrapper">
         <ul class="wrapper__list">
-          <li class="wrapper__item"><button class="wrapper__btn" onclick="new Audio('./Sounds/gen-6.mp3').play();">Aa</button></li>
-          <li class="wrapper__item"><button class="wrapper__btn" onclick="new Audio('./Sounds/gen-7.mp3').play();">Bb</button></li>
-          <li class="wrapper__item"><button class="wrapper__btn" onclick="new Audio('./Sounds/gen-10.mp3').play();">Dd</button></li>
-          <li class="wrapper__item"><button class="wrapper__btn" onclick="new Audio('./Sounds/gen-11.mp3').play();">Ee</button></li>
-          <li class="wrapper__item"><button class="wrapper__btn" onclick="new Audio('./Sounds/gen-27.mp3').play();">Ff</button></li>
-          <li class="wrapper__item"><button class="wrapper__btn" onclick="new Audio('./Sounds/gen-9.mp3').play();">Gg</button></li>
+          <li class="wrapper__item">
+            <button class="wrapper__btn" onclick="new Audio('./sounds/Uzb/a.mp3').play();">Aa
+              <span class="tooltip">&#10551;
+                <span class="tooltiptext">
+                  <table class="table">
+                    <tr class="table__cols">
+                      <th class="table__rows">Talaffuz</th>
+                      <th class="table__rows">Misol</th>
+                    </tr>
+                    <tr class="table__cols">
+                      <td class="table__rows">a</td>
+                      <td class="table__rows">ana,[ana]</td>
+                    </tr>
+                  </table>
+                </span>
+              </span>
+            </button>
+					</li>
+          <li class="wrapper__item">
+            <button class="wrapper__btn" onclick="new Audio('./sounds/Uzb/b.mp3').play();">Bb
+              <span class="tooltip">&#10551;
+                <span class="tooltiptext">
+                  <table class="table">
+                    <tr class="table__cols">
+                      <th class="table__rows">Talaffuz</th>
+                      <th class="table__rows">Misol</th>
+                    </tr>
+                    <tr class="table__cols">
+                      <td class="table__rows">be</td>
+                      <td class="table__rows">bola,[bɔla]</td>
+                    </tr>
+                  </table>
+                </span>
+              </span>
+            </button>
+          </li>
+          <li class="wrapper__item">
+            <button class="wrapper__btn" onclick="new Audio('./sounds/Uzb/d.mp3').play();">Dd
+              <span class="tooltip">&#10551;
+                <span class="tooltiptext">
+                  <table class="table">
+                    <tr class="table__cols">
+                      <th class="table__rows">Talaffuz</th>
+                      <th class="table__rows">Misol</th>
+                    </tr>
+                    <tr class="table__cols">
+                      <td class="table__rows">de</td>
+                      <td class="table__rows">devon,[dɛvɔn]</td>
+                    </tr>
+                  </table>
+                </span>
+              </span>
+            </button>
+          </li>
+          <li class="wrapper__item">
+            <button class="wrapper__btn" onclick="new Audio('./sounds/Uzb/e.mp3').play();">Ee
+              <span class="tooltip">&#10551;
+                <span class="tooltiptext">
+                  <table class="table">
+                    <tr class="table__cols">
+                      <th class="table__rows">Talaffuz</th>
+                      <th class="table__rows">Misol</th>
+                    </tr>
+                    <tr class="table__cols">
+                      <td class="table__rows">e</td>
+                      <td class="table__rows">elchi,[ɛlʧi]</td>
+                    </tr>
+                  </table>
+                </span>
+              </span>
+            </button>
+          </li>
+          <li class="wrapper__item">
+            <button class="wrapper__btn" onclick="new Audio('./sounds/Uzb/f.mp3').play();">Ff
+              <span class="tooltip">&#10551;
+                <span class="tooltiptext">
+                  <table class="table">
+                    <tr class="table__cols">
+                      <th class="table__rows">Talaffuz</th>
+                      <th class="table__rows">Misol</th>
+                    </tr>
+                    <tr class="table__cols">
+                      <td class="table__rows">ef</td>
+                      <td class="table__rows">fazo,[fazɔ]</td>
+                    </tr>
+                  </table>
+                </span>
+              </span>
+            </button>
+          </li>
+          <li class="wrapper__item">
+            <button class="wrapper__btn" onclick="new Audio('./sounds/Uzb/g.mp3').play();">Gg
+              <span class="tooltip">&#10551;
+                <span class="tooltiptext">
+                  <table class="table">
+                    <tr class="table__cols">
+                      <th class="table__rows">Talaffuz</th>
+                      <th class="table__rows">Misol</th>
+                    </tr>
+                    <tr class="table__cols">
+                      <td class="table__rows">ge</td>
+                      <td class="table__rows">gul,[gʊl]</td>
+                    </tr>
+                  </table>
+                </span>
+              </span>
+            </button>
+          </li>
         </ul>
         <ul class="wrapper__list">
-          <li class="wrapper__item"><button class="wrapper__btn" onclick="new Audio('./Sounds/gen-.mp3').play();">Hh</button></li>
-          <li class="wrapper__item"><button class="wrapper__btn" onclick="new Audio('./Sounds/gen-15.mp3').play();">Ii</button></li>
-          <li class="wrapper__item"><button class="wrapper__btn" onclick="new Audio('./Sounds/gen-13.mp3').play();">Jj</button></li>
-          <li class="wrapper__item"><button class="wrapper__btn" onclick="new Audio('./Sounds/gen-17.mp3').play();">Kk</button></li>
-          <li class="wrapper__item"><button class="wrapper__btn" onclick="new Audio('./Sounds/gen-18.mp3').play();">Ll</button></li>
-          <li class="wrapper__item"><button class="wrapper__btn" onclick="new Audio('./Sounds/gen-19.mp3').play();">Mm</button></li>
+          <li class="wrapper__item">
+            <button class="wrapper__btn" onclick="new Audio('./sounds/Uzb/h.mp3').play();">Hh
+              <span class="tooltip">&#10551;
+                <span class="tooltiptext">
+                  <table class="table">
+                    <tr class="table__cols">
+                      <th class="table__rows">Talaffuz</th>
+                      <th class="table__rows">Misol</th>
+                    </tr>
+                    <tr class="table__cols">
+                      <td class="table__rows">he</td>
+                      <td class="table__rows">haj,[haʥ]</td>
+                    </tr>
+                  </table>
+                </span>
+              </span>
+            </button></li>
+          <li class="wrapper__item">
+            <button class="wrapper__btn" onclick="new Audio('./sounds/Uzb/i.mp3').play();">Ii
+              <span class="tooltip">&#10551;
+                <span class="tooltiptext">
+                  <table class="table">
+                    <tr class="table__cols">
+                      <th class="table__rows">Talaffuz</th>
+                      <th class="table__rows">Misol</th>
+                    </tr>
+                    <tr class="table__cols">
+                      <td class="table__rows">i</td>
+                      <td class="table__rows">inson,[insɔn]</td>
+                    </tr>
+                  </table>
+                </span>
+              </span>
+            </button></li>
+          <li class="wrapper__item">
+            <button class="wrapper__btn" onclick="new Audio('./sounds/Uzb/j.mp3').play();">Jj
+              <span class="tooltip">&#10551;
+                <span class="tooltiptext">
+                  <table class="table">
+                    <tr class="table__cols">
+                      <th class="table__rows">Talaffuz</th>
+                      <th class="table__rows">Misol</th>
+                    </tr>
+                    <tr class="table__cols">
+                      <td class="table__rows">je</td>
+                      <td class="table__rows">jiyda,[ʥijda]</td>
+                    </tr>
+                  </table>
+                </span>
+              </span>
+            </button></li>
+          <li class="wrapper__item">
+            <button class="wrapper__btn" onclick="new Audio('./sounds/Uzb/k.mp3').play();">Kk
+              <span class="tooltip">&#10551;
+                <span class="tooltiptext">
+                  <table class="table">
+                    <tr class="table__cols">
+                      <th class="table__rows">Talaffuz</th>
+                      <th class="table__rows">Misol</th>
+                    </tr>
+                    <tr class="table__cols">
+                      <td class="table__rows">ka</td>
+                      <td class="table__rows">kelin,[kɛlin]</td>
+                    </tr>
+                  </table>
+                </span>
+              </span>
+            </button></li>
+          <li class="wrapper__item">
+            <button class="wrapper__btn" onclick="new Audio('./sounds/Uzb/l.mp3').play();">Ll
+              <span class="tooltip">&#10551;
+                <span class="tooltiptext">
+                  <table class="table">
+                    <tr class="table__cols">
+                      <th class="table__rows">Talaffuz</th>
+                      <th class="table__rows">Misol</th>
+                    </tr>
+                    <tr class="table__cols">
+                      <td class="table__rows">el</td>
+                      <td class="table__rows">lekin,[lɛkin]</td>
+                    </tr>
+                  </table>
+                </span>
+              </span>
+            </button></li>
+          <li class="wrapper__item">
+            <button class="wrapper__btn" onclick="new Audio('./sounds/Uzb/m.mp3').play();">Mm
+              <span class="tooltip">&#10551;
+                <span class="tooltiptext">
+                  <table class="table">
+                    <tr class="table__cols">
+                      <th class="table__rows">Talaffuz</th>
+                      <th class="table__rows">Misol</th>
+                    </tr>
+                    <tr class="table__cols">
+                      <td class="table__rows">em</td>
+                      <td class="table__rows">men,[mɛn]</td>
+                    </tr>
+                  </table>
+                </span>
+              </span>
+            </button></li>
         </ul>
         <ul class="wrapper__list">
-          <li class="wrapper__item"><button class="wrapper__btn" onclick="new Audio('./Sounds/gen-20.mp3').play();">Nn</button></li>
-          <li class="wrapper__item"><button class="wrapper__btn" onclick="new Audio('./Sounds/gen-21.mp3').play();">Oo</button></li>
-          <li class="wrapper__item"><button class="wrapper__btn" onclick="new Audio('./Sounds/gen-22.mp3').play();">Pp</button></li>
-          <li class="wrapper__item"><button class="wrapper__btn" onclick="new Audio('./Sounds/gen-.mp3').play();">Qq</button></li>
-          <li class="wrapper__item"><button class="wrapper__btn" onclick="new Audio('./Sounds/gen-23.mp3').play();">Rr</button></li>
-          <li class="wrapper__item"><button class="wrapper__btn" onclick="new Audio('./Sounds/gen-24.mp3').play();">Ss</button></li>
+          <li class="wrapper__item">
+            <button class="wrapper__btn" onclick="new Audio('./sounds/Uzb/n.mp3').play();">Nn
+              <span class="tooltip">&#10551;
+                <span class="tooltiptext">
+                  <table class="table">
+                    <tr class="table__cols">
+                      <th class="table__rows">Talaffuz</th>
+                      <th class="table__rows">Misol</th>
+                    </tr>
+                    <tr class="table__cols">
+                      <td class="table__rows">en</td>
+                      <td class="table__rows">nok,[nɔk]</td>
+                    </tr>
+                  </table>
+                </span>
+              </span>
+            </button>
+          </li>
+          <li class="wrapper__item">
+            <button class="wrapper__btn" onclick="new Audio('./sounds/Uzb/o.mp3').play();">Oo
+              <span class="tooltip">&#10551;
+                <span class="tooltiptext">
+                  <table class="table">
+                    <tr class="table__cols">
+                      <th class="table__rows">Talaffuz</th>
+                      <th class="table__rows">Misol</th>
+                    </tr>
+                    <tr class="table__cols">
+                      <td class="table__rows">o</td>
+                      <td class="table__rows">oshiq,[ɔʃiq]</td>
+                    </tr>
+                  </table>
+                </span>
+              </span>
+            </button>
+          </li>
+          <li class="wrapper__item">
+            <button class="wrapper__btn" onclick="new Audio('./sounds/Uzb/p.mp3').play();">Pp
+              <span class="tooltip">&#10551;
+                <span class="tooltiptext">
+                  <table class="table">
+                    <tr class="table__cols">
+                      <th class="table__rows">Talaffuz</th>
+                      <th class="table__rows">Misol</th>
+                    </tr>
+                    <tr class="table__cols">
+                      <td class="table__rows">ре</td>
+                      <td class="table__rows">pashsha,[paʃʃa]</td>
+                    </tr>
+                  </table>
+                </span>
+              </span>
+            </button>
+          </li>
+          <li class="wrapper__item">
+            <button class="wrapper__btn" onclick="new Audio('./sounds/Uzb/q.mp3').play();">Qq
+              <span class="tooltip">&#10551;
+                <span class="tooltiptext">
+                  <table class="table">
+                    <tr class="table__cols">
+                      <th class="table__rows">Talaffuz</th>
+                      <th class="table__rows">Misol</th>
+                    </tr>
+                    <tr class="table__cols">
+                      <td class="table__rows">qa</td>
+                      <td class="table__rows">qo‘l,[qɵl]</td>
+                    </tr>
+                  </table>
+                </span>
+              </span>  
+            </button>
+          </li>
+          <li class="wrapper__item">
+            <button class="wrapper__btn" onclick="new Audio('./sounds/Uzb/r.mp3').play();">Rr
+              <span class="tooltip">&#10551;
+                <span class="tooltiptext">
+                  <table class="table">
+                    <tr class="table__cols">
+                      <th class="table__rows">Talaffuz</th>
+                      <th class="table__rows">Misol</th>
+                    </tr>
+                    <tr class="table__cols">
+                      <td class="table__rows">re</td>
+                      <td class="table__rows">orom,[ɔrɔm]</td>
+                    </tr>
+                  </table>
+                </span>
+              </span>
+            </button>
+          </li>
+          <li class="wrapper__item">
+            <button class="wrapper__btn" onclick="new Audio('./sounds/Uzb/s.mp3').play();">Ss
+              <span class="tooltip">&#10551;
+                <span class="tooltiptext">
+                  <table class="table">
+                    <tr class="table__cols">
+                      <th class="table__rows">Talaffuz</th>
+                      <th class="table__rows">Misol</th>
+                    </tr>
+                    <tr class="table__cols">
+                      <td class="table__rows">es</td>
+                      <td class="table__rows">sevgi,[sɛvgi]</td>
+                    </tr>
+                  </table>
+                </span>
+              </span>
+            </button>
+          </li>
         </ul>
         <ul class="wrapper__list">
-          <li class="wrapper__item"><button class="wrapper__btn" onclick="new Audio('./Sounds/gen-25.mp3').play();">Tt</button></li>
-          <li class="wrapper__item"><button class="wrapper__btn" onclick="new Audio('./Sounds/gen-26.mp3').play();">Uu</button></li>
-          <li class="wrapper__item"><button class="wrapper__btn" onclick="new Audio('./Sounds/gen-8.mp3').play();">Vv</button></li>
-          <li class="wrapper__item"><button class="wrapper__btn" onclick="new Audio('./Sounds/gen-28.mp3').play();">Xx</button></li>
-          <li class="wrapper__item"><button class="wrapper__btn" onclick="new Audio('./Sounds/gen-38.mp3').play();">Yy</button></li>
-          <li class="wrapper__item"><button class="wrapper__btn" onclick="new Audio('./Sounds/gen-14.mp3').play();">Zz</button></li>
+          <li class="wrapper__item">
+            <button class="wrapper__btn" onclick="new Audio('./sounds/Uzb/t.mp3').play();">Tt
+              <span class="tooltip">&#10551;
+                <span class="tooltiptext">
+                  <table class="table">
+                    <tr class="table__cols">
+                      <th class="table__rows">Talaffuz</th>
+                      <th class="table__rows">Misol</th>
+                    </tr>
+                    <tr class="table__cols">
+                      <td class="table__rows">te</td>
+                      <td class="table__rows">tuz,[tʊz]</td>
+                    </tr>
+                  </table>
+                </span>
+              </span>
+            </button>
+          </li>
+          <li class="wrapper__item">
+            <button class="wrapper__btn" onclick="new Audio('./sounds/Uzb/u.mp3').play();">Uu
+              <span class="tooltip">&#10551;
+                <span class="tooltiptext">
+                  <table class="table">
+                    <tr class="table__cols">
+                      <th class="table__rows">Talaffuz</th>
+                      <th class="table__rows">Misol</th>
+                    </tr>
+                    <tr class="table__cols">
+                      <td class="table__rows">u</td>
+                      <td class="table__rows">uchun,[ʊʧʊn]</td>
+                    </tr>
+                  </table>
+                </span>
+              </span>
+            </button>
+          </li>
+          <li class="wrapper__item">
+            <button class="wrapper__btn" onclick="new Audio('./sounds/Uzb/v.mp3').play();">Vv
+              <span class="tooltip">&#10551;
+                <span class="tooltiptext">
+                  <table class="table">
+                    <tr class="table__cols">
+                      <th class="table__rows">Talaffuz</th>
+                      <th class="table__rows">Misol</th>
+                    </tr>
+                    <tr class="table__cols">
+                      <td class="table__rows">ve</td>
+                      <td class="table__rows">vojib,[vɔʥib]</td>
+                    </tr>
+                  </table>
+                </span>
+              </span>
+            </button>
+          </li>
+          <li class="wrapper__item">
+            <button class="wrapper__btn" onclick="new Audio('./sounds/Uzb/x(xa).mp3').play();">Xx
+              <span class="tooltip">&#10551;
+                <span class="tooltiptext">
+                  <table class="table">
+                    <tr class="table__cols">
+                      <th class="table__rows">Talaffuz</th>
+                      <th class="table__rows">Misol</th>
+                    </tr>
+                    <tr class="table__cols">
+                      <td class="table__rows">xa</td>
+                      <td class="table__rows">xola,[xɔla]</td>
+                    </tr>
+                  </table>
+                </span>
+              </span>
+            </button>
+          </li>
+          <li class="wrapper__item">
+            <button class="wrapper__btn" onclick="new Audio('./sounds/Uzb/ye.mp3').play();">Yy
+              <span class="tooltip">&#10551;
+                <span class="tooltiptext">
+                  <table class="table">
+                    <tr class="table__cols">
+                      <th class="table__rows">Talaffuz</th>
+                      <th class="table__rows">Misol</th>
+                    </tr>
+                    <tr class="table__cols">
+                      <td class="table__rows">ye</td>
+                      <td class="table__rows">yosh,[jɔʃ]</td>
+                    </tr>
+                  </table>
+                </span>
+              </span>
+            </button>
+          </li>
+          <li class="wrapper__item">
+            <button class="wrapper__btn" onclick="new Audio('./sounds/Uzb/z.mp3').play();">Zz
+              <span class="tooltip">&#10551;
+                <span class="tooltiptext">
+                  <table class="table">
+                    <tr class="table__cols">
+                      <th class="table__rows">Talaffuz</th>
+                      <th class="table__rows">Misol</th>
+                    </tr>
+                    <tr class="table__cols">
+                      <td class="table__rows">ze</td>
+                      <td class="table__rows">zeb,[zɛb]</td>
+                    </tr>
+                  </table>
+                </span>
+              </span>
+            </button>
+          </li>
         </ul>
         <ul class="wrapper__list">
-          <li class="wrapper__item"><button class="wrapper__btn" onclick="new Audio('./Sounds/gen-26.mp3').play();">O'o'</button></li>
-          <li class="wrapper__item"><button class="wrapper__btn" onclick="new Audio('./Sounds/gen-8.mp3').play();">G'g'</button></li>
-          <li class="wrapper__item"><button class="wrapper__btn" onclick="new Audio('./Sounds/gen-31.mp3').play();">Shsh</button></li>
-          <li class="wrapper__item"><button class="wrapper__btn" onclick="new Audio('./Sounds/gen-30.mp3').play();">Chch</button></li>
-          <li class="wrapper__item"><button class="wrapper__btn" onclick="new Audio('./Sounds/gen-.mp3').play();">ng</button></li>
-          <li class="wrapper__item"><button class="wrapper__btn" onclick="new Audio('./Sounds/gen-.mp3').play();">'</button></li>
-        </ul>
+          <li class="wrapper__item">
+            <button class="wrapper__btn" onclick="new Audio('./sounds/Uzb/oo.mp3').play();">O‘o‘
+              <span class="tooltip">&#10551;
+                <span class="tooltiptext">
+                  <table class="table">
+                    <tr class="table__cols">
+                      <th class="table__rows">Talaffuz</th>
+                      <th class="table__rows">Misol</th>
+                    </tr>
+                    <tr class="table__cols">
+                      <td class="table__rows">o‘</td>
+                      <td class="table__rows">o‘n,[ɵn]</td>
+                    </tr>
+                  </table>
+                </span>
+              </span> 
+            </button>
+          </li>
+          <li class="wrapper__item">
+            <button class="wrapper__btn" onclick="new Audio('./sounds/Uzb/gg.mp3').play();">G‘g‘
+              <span class="tooltip">&#10551;
+                <span class="tooltiptext">
+                  <table class="table">
+                    <tr class="table__cols">
+                      <th class="table__rows">Talaffuz</th>
+                      <th class="table__rows">Misol</th>
+                    </tr>
+                    <tr class="table__cols">
+                      <td class="table__rows">g‘a</td>
+                      <td class="table__rows">g‘oz,[ʁɔz]</td>
+                    </tr>
+                  </table>
+                </span>
+              </span> 
+            </button>
+          </li>
+          <li class="wrapper__item">
+            <button class="wrapper__btn" onclick="new Audio('./sounds/Uzb/sh.mp3').play();">Shsh
+              <span class="tooltip">&#10551;
+                <span class="tooltiptext">
+                  <table class="table">
+                    <tr class="table__cols">
+                      <th class="table__rows">Talaffuz</th>
+                      <th class="table__rows">Misol</th>
+                    </tr>
+                    <tr class="table__cols">
+                      <td class="table__rows">she</td>
+                      <td class="table__rows">shosh,[ʃɔʃ]</td>
+                    </tr>
+                  </table>
+                </span>
+              </span> 
+            </button>
+          </li>
+          <li class="wrapper__item">
+            <button class="wrapper__btn" onclick="new Audio('./sounds/Uzb/ch.mp3').play();">Chch
+              <span class="tooltip">&#10551;
+                <span class="tooltiptext">
+                  <table class="table">
+                    <tr class="table__cols">
+                      <th class="table__rows">Talaffuz</th>
+                      <th class="table__rows">Misol</th>
+                    </tr>
+                    <tr class="table__cols">
+                      <td class="table__rows">che</td>
+                      <td class="table__rows">choy,[ʧɔj]]</td>
+                    </tr>
+                  </table>
+                </span>
+              </span> 
+            </button>
+          </li>
+          <li class="wrapper__item">
+            <button class="wrapper__btn" onclick="new Audio('./sounds/Uzb/ng.mp3').play();">ng
+              <span class="tooltip">&#10551;
+                <span class="tooltiptext">
+                  <table class="table">
+                    <tr class="table__cols">
+                      <th class="table__rows">Talaffuz</th>
+                      <th class="table__rows">Misol</th>
+                    </tr>
+                    <tr class="table__cols">
+                      <td class="table__rows">ng</td>
+                      <td class="table__rows">go‘ng,[gɵŋ]</td>
+                    </tr>
+                  </table>
+                </span>
+              </span> 
+            </button>
+          </li>
+          <li class="wrapper__item">
+            <button class="wrapper__btn" onclick="new Audio('./sounds/Uzb/tb.mp3').play();">'
+              <span class="tooltip">&#10551;
+                <span class="tooltiptext">
+                  <table class="table">
+                    <tr class="table__cols">
+                      <th class="table__rows">Talaffuz</th>
+                      <th class="table__rows">Misol</th>
+                    </tr>
+                    <tr class="table__cols">
+                      <td class="table__rows">tutuq belgisi</td>
+                      <td class="table__rows">da'vo,[daʔvɔ]</td>
+                    </tr>
+                  </table>
+                </span>
+              </span> 
+            </button>
+          </li>
+        </ul><br>
+        <p class="wrapper_paragraph">
+          Lotin yozuviga asoslangan o‘zbek alifbosi <i><u>29</u></i> harf va bitta tutuq belgisi <i>(’)</i>dan iborat bo‘lib, shundan, unli harflar
+          soni <i><u>6</u></i> ta, undosh harflar soni <i><u>23</u></i> tani tashkil qiladi.
+        </p>
       </div>
     </div>
     <script src="./renderer.js"></script>
